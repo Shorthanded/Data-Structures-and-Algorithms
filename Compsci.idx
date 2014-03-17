@@ -1,0 +1,19 @@
+\I\\{address}, \[4], 5.
+\I\\{city}, \[4].
+\I\\{edwin}, \[5].
+\I\&{employee\_data}, \[4], 5.
+\I\\{frequency}, \[2], \[3].
+\I\\{misc}, \[4].
+\I\\{printf}, 5.
+\I\\{salary}, \[4].
+\I\\{state}, \[4].
+\I\\{street}, \[4].
+\I\\{word}, \[2], \[3].
+\I\&{wordcount}, \[2].
+\I\.{WORDCOUNT}, \[2], 3.
+\I\&{wordcount2}, \[3].
+\I\\{wordfrequency}, \[2].
+\I\&{wordfrequency2}, \[3].
+\I\.{WORDLENGTH}, \[2], 3.
+\I\\{years\_employed}, \[4].
+\I\\{zip\_code}, \[4], 5.

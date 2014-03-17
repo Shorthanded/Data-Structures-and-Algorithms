@@ -1,0 +1,63 @@
+\input cwebmac
+\datethis
+
+
+\N{1}{1}Introduction. This implements programs from Chapter 1 in ``Data
+Structures---An Advanced Approach using \Cee''
+
+\fi
+
+\N{1}{2}Structures. {\bf Structures} are a compound data type  that ``{\it
+contains an arbitrary group of related data}''. A structure can can contain
+fields of any kind of data, including other structures. A structure type name
+(or {\it tag}) is optional,  used when defining a type.
+
+\Y\B\4\D$\.{WORDLENGTH}$ \5
+\T{100}\par
+\B\4\D$\.{WORDCOUNT}$ \5
+\T{100}\par
+\Y\B\&{typedef} \&{struct} \&{wordcount} ${}\{{}$\1\6
+\&{char} \\{word}[\.{WORDLENGTH}];\6
+\&{int} \\{frequency};\2\6
+${}\};{}$\6
+\&{wordcount} \\{wordfrequency}[\.{WORDCOUNT}];\par
+\fi
+
+\M{3}It is also possible to define a type or structure and create a variable
+all at once:
+
+\Y\B\&{typedef} \&{struct} \&{wordcount2} ${}\{{}$\1\6
+\&{char} \\{word}[\.{WORDLENGTH}];\6
+\&{int} \\{frequency};\2\6
+${}\}{}$ \&{wordfrequency2}[\.{WORDCOUNT}];\par
+\fi
+
+\M{4}An example of when the tag might be omitted is shown below:
+
+\Y\B\&{typedef} \&{struct} \&{employee\_data} ${}\{{}$\1\6
+\&{struct} ${}\{{}$\1\6
+\&{char} \\{street}[\T{16}];\6
+\&{char} \\{city}[\T{8}];\6
+\&{char} \\{state}[\T{2}];\6
+\&{int} \\{zip\_code};\2\6
+${}\}{}$ \\{address};\6
+\&{struct} ${}\{{}$\1\6
+\&{int} \\{salary};\6
+\&{int} \\{years\_employed};\2\6
+${}\}{}$ \\{misc};\2\6
+${}\}{}$;\par
+\fi
+
+\N{1}{5}Operations on Structures. The most common operation on stuctures is
+member access.
+
+\Y\B\&{employee\_data} \\{edwin};\7
+${}\\{printf}(\.{"\%d\\n"},\39\\{edwin}.\\{address}.\\{zip\_code}){}$;\par
+\fi
+
+\N{1}{6}Index.
+\fi
+
+\inx
+\fin
+\con
